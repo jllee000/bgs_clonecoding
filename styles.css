@@ -1,0 +1,304 @@
+/* 폰트 */
+@font-face {
+  font-family: 'EnvironmentR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/EnvironmentR.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EnvironmentB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/EnvironmentR.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,600&display=swap');
+/* 공통 */
+
+:root {
+  --game-144-color: #0045ff;
+  --game-144-sub-color: #bce4ff;
+  --game-144-font: 'EnvironmentR';
+  --game-144-bold-font: 'EnvironmentB';
+  --game-144-sub-font: 'NanumSquareR';
+}
+
+
+.game-intro{
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  text-align: center;
+  height: 1100px;
+}
+
+/*헤더*/
+
+.game-wrapper.basic .app-header {
+  align-items: center;
+  height: 2.48rem;
+  position: relative;
+  background-color: #e5f0fa;
+  flex-shrink: 0;
+}
+
+
+.game-wrapper .app-header .app-logo {
+  background-repeat: no-repeat;
+  width: 13rem;
+  background-position: center center;
+  margin: -1px auto;
+  background-image: url('https://cdn.banggooso.com/assets/images/game144/logo.png');
+}
+
+/*헤더 - 질문지때는 흰배경*/
+.app .app-header.page {
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+  background: white !important;
+  background-size: cover;
+}
+/*intro 페이지 */
+
+
+.game-intro .intro-imgdiv {
+  width: 500px;
+  background-image: url('https://cdn.banggooso.com/assets/images/game144/intro.png');
+}
+.game-intro .intro-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.intro-contents{
+  
+  margin-top: -50rem;
+  justify-content: center;
+ 
+}
+.intro-gif{
+  margin-top: 3rem;
+  margin-left: 5rem;
+  width: 70%;
+}
+.game-intro .btn-game-start{
+  margin-top: -30rem;
+  background-color: var(--game-144-color);
+  color: white;
+
+  
+
+}
+.game-intro .btn-game-start:hover{
+   
+  background-color:#0030b3;
+}
+
+.visittxt{
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: 'EnvironmentB';
+}
+
+.intro-rank{
+  background-color: #e5f0fa;
+  margin-top: -3rem;
+  
+  padding-bottom: 1rem;
+}
+.result-box.most{
+ background-color: white;
+}
+
+
+/*문제 페이지*/
+.game-wrapper.basic .app-main {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  background-image: url(https://cdn.banggooso.com/assets/images/game144/background.png);
+}
+/* 우선 progrees바 부터*/
+.game-wrap .game-progress .game-progress-inner{
+  background-color: #0045ff;
+}
+
+/*질문지 스타일 변경*/
+
+.game-wrap .game-body .question-options .question-option{
+  border: 3px solid #bcdfff;
+}
+
+.game-wrap .game-body .question-options .question-option:hover{
+  background-color:#cee6fc;
+}
+.game-wrap .game-body .question-options .question-option:focus,
+.game-wrap .game-body .question-options .question-option:active {
+  border: 3px solid var(--game-144-color);
+  background-color: var(--game-144-color);
+  color: #ffffff;
+}
+
+
+/*result 페이지*/
+
+
+.game-wrapper.basic .game-title{
+  background-color: #0045ff;
+  color: white;
+}
+
+
+
+/*result-title 스닙펫에서의 css수정*/
+.game-wrapper #result-title h2{
+  color: #0045ff;
+  font-size: 1rem;
+}
+
+.game-wrapper #result-title h1{
+  color: #000000;
+  font-size: 1.8rem;
+}
+
+.game-wrapper #result-title .num-statement{
+  font-size: 0.8rem;
+}
+
+.game-wrapper #result-title .num-statement>span{
+  font-size: 0.8rem;
+  color: #0045ff;
+  font-weight: 900;
+}
+
+.game-wrapper #result-title .img-box{
+ 
+   width: 80%;
+   margin-top: -1rem;
+}
+
+.game-wrapper #result-title .img-box {
+   height: 50%;
+}
+
+.game-wrapper #result-title .thumb-img-text{
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-left: 4.1rem;
+  margin-top: -1.5rem;
+}
+
+.result-descTitle{
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin-top: 2rem;
+}
+
+/*별도 div제작하기*/
+
+.result-bti-div {
+  width: 400px;
+  height: 8rem;
+  padding: 30px;
+  border: 1px solid rgb(128, 128, 128, 0.2);
+  border-radius: 20px;
+  margin-bottom: 5rem;
+  font-weight: 900;
+  margin: 2rem auto;
+  box-shadow: 0.2rem 0.2rem rgb(128, 128, 128, 0.39);
+  background-color: white;
+}
+
+.result-bti-div:hover{
+  background-color: #f7fbff;
+}
+.result-bti-div div:nth-child(1){
+  font-size: 0.9rem;
+   width: 8rem;
+    margin: auto;
+}
+
+.result-bti-div div:nth-child(1)::before{
+    box-sizing: border-box;  
+    content: '';
+    height: 0.5rem;
+    bottom: 0.45rem;
+    background-color: var(--game-144-sub-color);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  
+}
+.result-bti-div div:nth-child(2){
+  font-size: 1.8rem;
+  color: #0045ff;
+  
+}
+.result-bti-div div:nth-child(3){
+  font-size: 0.7rem;
+  color: rgb(0,0,0,0.5);
+
+}
+
+/*result-explain 부분*/
+/* json으로 맵핑 하드코딩 줄이기*/
+
+
+.result-explain{
+  padding: 20px;
+  text-align: left !important;
+  width: 400px;
+  border: 2px solid rgb(128, 128, 128, 0.3);
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+  font-size: 0.7rem;
+}
+.result-usually-title{
+  color: #0045ff;
+}
+.result-usually-ul{
+  text-align: left !important;
+}
+.result-usually-li{
+  list-style: circle;
+}
+.result-usually-ul .mark{
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 10px;
+  background: var(--game-144-color);
+  float: left;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.result-mento-title{
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0045ff;
+}
+.result-mentodiv{
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+
+}
+
+.result-mentodiv .mentotxt {
+  margin-top: 1rem;
+}
+.game-wrapper .app-main .result-mentoimg > img{
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  width: 100px
+}
+
+.result-share {
+  margin-top: 3rem;
+}
+
+
